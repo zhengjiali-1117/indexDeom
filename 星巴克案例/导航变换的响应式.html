@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width maximum-scale=1, initial-scale=1,user-scalable=no" />
+	<title>导航变换的响应式</title>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<style>
+		a,address,b,big,blockquote,body,center,cite,code,dd,del,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,label,legend,li,ol,p,pre,small,span,strong,u,ul,var{margin:0;padding:0; font-family:"微软雅黑","宋体"; color:#333;}
+a{ text-decoration:none;}
+a:hover{ color:#00abd9 !important;}
+img{ border:none;}
+ul,ol{ list-style:none;}
+h1,h2,h3,h4,h5,h6{ font-weight:100;}
+
+		.s_con{ 
+			width:1200px; 
+			margin:0 auto;
+		}
+		.header{ width:100%; height:60px; background:rgba(255,255,255,0.9); border-bottom:1px solid #ccc; position:fixed; top:0; left:0;}
+.hd_con{}
+.hd_con .logo{ float:left; margin-top:8px; margin-left:25px;}
+.hd_con .list{ float:right;}
+.hd_con .list li{ float:left;}
+.hd_con .list a{ display:block; padding:0 25px; line-height:60px; font-size:18px; position:relative;}
+.hd_con .list li.active a{color:#00abd9;}
+
+.hd_con .list li.active a:after{ content:""; display:block; width:5px; height:5px; background:#00abd9; border-radius:50%; position:absolute; bottom:7px; left:50%; margin-left:-2px;}
+
+.hd_con .hd_btn{ width:40px; height:40px; border:1px solid #aaa; border-radius:3px; position:absolute; top:10px; right:5%; cursor:pointer; display:none;}
+.hd_con .hd_btn i{ width:24px; height:3px; background:#aaa; display:block; position:absolute; top:0; left:50%; margin-left:-12px;}
+.hd_con .hd_btn i:nth-child(1){ top:10px;}
+.hd_con .hd_btn i:nth-child(2){ top:18px;}
+.hd_con .hd_btn i:nth-child(3){ top:26px;}
+
+		
+
+
+		@media (max-width: 767px){
+		
+			.hd_con .hd_btn{ display:block;}
+			
+			.hd_con .list{ position:absolute; top:60px; left:0;width:100%; background:rgba(255,255,255,0.9); border-top:1px solid #ccc; display:none;}
+			.hd_con .list li{ float:none; border-bottom:1px solid #eee;}
+			.hd_con .list a{ text-align:center;}
+}
+		@media (min-width: 768px){
+			.s_con{width: 100%;}
+}
+		@media (min-width: 992px){
+			.s_con{width: 100%;}
+}
+		@media (min-width: 1200px){
+			.s_con{width: 1200px;}
+}
+	</style>
+<script>
+$(function(){
+	$(".hd_btn").click(function(){
+		$(".hd_con .list").slideToggle();	
+	})	
+	
+	
+	$(window).resize(function(){		
+		
+		if($(this).width()>767){
+			$(".hd_con .list").show();				
+		}	
+	})
+	
+	
+	
+	
+	
+})
+
+
+
+</script
+
+
+</head>
+<body>
+	<header class="header">
+	<div class="hd_con s_con">
+    	<a href="#" class="logo"><img src="images/hd_logo.png" alt=""></a>
+        <nav class="list">
+        	<ul>
+            	<li class="active"><a href="#">首页</a></li>
+                <li><a href="#">案例</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">新闻资讯</a></li>                                                                 
+            </ul>
+        </nav>
+        
+        <div class="hd_btn">
+        	<i></i>
+            <i></i>
+            <i></i>
+        </div>
+        
+    </div>
+
+</header>
+
+
+</body>
+</html>

@@ -1,0 +1,380 @@
+a:hover{
+	text-decoration: none;
+}
+
+
+.btn-yellow{ padding:14px 40px; border:2px solid #a98e67; display:inline-block; color:#a98e67; font-size:14px; font-weight:600; }
+.btn-yellow:hover{background:#a98e67; color:#fff;}
+.home-h2{ font-size:30px; color:#fff; line-height:1em; text-align:center; font-weight:500;}
+.home-h3{ font-size:13px; color:#a98e67; line-height:1.9em; text-align:center; font-weight:600;}
+.home-p{ font-size:18px; text-align:center; color:#3d3d3d; line-height:1.7em;}
+
+.header.on{ padding:0px;}
+.header.on .menu{ margin:5px 10px;}
+.header.on .logo{width:50px;}
+.header.on .club{ margin:5px 10px; font-size:14px;}
+
+
+
+
+
+.navmenu{
+	width: 270px;
+	height: 100%;
+	background: #292929;
+	position: fixed;
+	top: 0;
+	left: -270px;
+	z-index: 104;
+	transition: 0.3s;
+	overflow: auto;
+}
+.navmenu.on{	
+	left: 0px;
+}
+.navmenu .list{
+	padding:10px 5px;
+
+}
+.navmenu .list li a{
+	display: block;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 5px;
+}
+.navmenu .list li a:hover{
+	color: #b89f7a;
+}
+.navmenu .list i{
+	float: right;
+	margin-top: 10px;
+	display: block;
+	width: 0;
+	height:0;
+	border: 5px solid transparent;
+	border-top-color: #fff;
+}
+.navmenu .list a:hover i{
+	border-top-color: #b89f7a;
+}
+.navmenu .top li a{
+	color: #b89f7a;
+}
+.navmenu .top li a:hover{
+	color: #fff;
+}
+.navmenu .top{
+
+	border-bottom: 1px solid #525252;
+}
+.navmenu .list .listmenu ul{
+	display: none;
+}
+.navmenu .list .listmenu ul li a{
+	display: block;
+	padding: 5px 0 10px 25px;
+	color: #aaa;;
+}
+.navmenu .list .listmenu ul li a:hover{
+	color:#b89f7a
+}
+.bg{ 
+	width:100%; 
+	height:100%; 
+	background:rgba(0,0,0,0.8); 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	z-index:101; 
+	display:none;
+}
+.header{
+	box-shadow: 0 1px 5px rgba(0,0,0,.1);
+	padding: 15px 0; 
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	width: 100%;
+	background:#fff;
+	transition:0.3s;
+	z-index: 100;
+}
+.header .menu{
+	width: 30px;
+	margin: 15px 10px;
+	text-align: center;
+	cursor: pointer;
+}
+.header .menu img{
+	width: 100%;
+	opacity: 0.8;
+}
+.header .menu:hover img{
+	opacity: 1;
+}
+.header .menu span{
+	font-size: 12px;
+}
+.header .logo{
+	width: 73px;
+	margin: 0px auto;
+}
+.header .logo a img{
+	display: block;
+	width: 100%;
+}
+.header .club{
+	margin: 15px 10px;
+	text-align: right;
+	font-size: 16px;
+	color: #4e4e4e;
+}
+.header .club a{
+	color:#b89f7a;
+	font-size: 14px;
+	font-weight: 600;
+}
+.header .club a:hover{ 
+	color:#967a50;
+}
+.banner{
+	margin-top: 100px;
+	position: relative;	
+}
+.banner img{
+	width: 100%;
+	max-width:100%;
+}
+.banner span{
+	position: absolute;
+	width: 110px;
+	height: 50px;
+	top:30%;
+	left: 50%;
+	margin-left: -55px;
+	background:rgb(184,159,122);
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+}
+.banner span:hover{
+	background-color: #967a50;;
+}
+.club1{ 
+	background:#1f1f1f; 
+	width:100%; 
+	overflow:hidden;
+}
+.club1 .pic{ 
+	width:100%;
+}
+.club1 .container{ 
+	padding:80px 100px;
+}
+.club1 .home-p{ 
+	color:#999; 
+	padding:20px 0 70px;
+}
+.club1 .buttons{ 
+	text-align:center; 
+	font-size:0px;
+}
+.club1 .buttons a{ 
+	margin:0 15px;
+}
+
+.app{
+	width: 100%;
+	height: 784px;
+	background: #e0e0e0;
+	position: relative;
+}
+.app .container{
+	height: 100%;
+	position: relative;
+	z-index:2;
+}
+.app .container .mytable{
+	display: table;
+	width: 55%;
+	height: 100%;
+}
+.app .container .mytable .cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+.app .container .mytable .cell h3{ 
+	text-align:left;
+}
+.app .container .mytable .cell p{ 
+	font-size:26px; 
+	line-height:1.8em; 
+	color:#3d3d3d; 
+	text-align:justify; 
+	padding:20px 0 140px;
+}
+.app .container .mytable .cell .buttons{ 
+	font-size:0px;
+}
+.app .container .mytable .cell .buttons a{ 
+	margin-right:15px;
+}
+
+.app .pic{ 
+	max-width:49%; 
+	position:absolute; 
+	right:0; 
+	bottom:80px; 
+	z-index:1;
+}
+.activity{
+	width: 100%;
+	position: relative;
+}
+.activity .box{
+	display: block;
+	padding: 0;
+}
+.activity .box .pic{
+	width: 100%;
+}
+.activity .box .text{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.activity .box .text .mytable{
+	display: table;
+	width:100%; 
+	height:100%
+}
+.activity .box .text .mytable .cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+.barista{ 
+	width: 100%;
+	padding:80px 0 ; 
+	background:#f5f5f5; 
+	text-align: center;
+}
+.barista h2{ 
+	color:#3d3d3d;
+}
+.barista hr{ 
+	width:150px; 
+	border-top-color:#d6d6d6; 
+	margin:30px auto 25px;
+}
+.barista .title p{ 
+	font-size:18px; 
+	color:#525252;
+}
+
+.barista .swiper-container{ 
+	margin-top:60px; 
+	padding-bottom:50px;
+}
+.barista .swiper-slide{ 
+	width:auto;
+}
+.barista .swiper-slide img{ 
+	width:100%;
+}
+
+.barista .text{ 
+	position:absolute; 
+	bottom:25px; 
+	left:0; 
+	padding:0 20px; 
+	line-height:1.2em;
+}
+.barista .text p{ 
+	font-size:18px; 
+	color:#fff;
+}
+.barista .swiper-pagination-bullet{ 
+	width:10px; 
+	height:10px; o
+	pacity:0.6;
+}
+.barista .swiper-pagination-bullet-active{ 
+	background:#ae9061; 
+	opacity:1;
+}
+
+.reserve{
+	width: 100%;
+	background: #000;
+	text-align: center;
+	padding: 30px 0;
+}
+.reserve .mytable{
+	display: table;
+}
+.reserve .mytable .cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+.reserve .mytable .cell p{
+	font-size: 25px;
+	color: rgba(112,112,112);
+	line-height:1.7em;
+	margin:20px auto 40px;
+
+}
+.reserve .mytable .cell .buttons{
+	font-size: 0;
+}
+.reserve .mytable .cell .buttons a{
+	margin: 10px 15px;
+}
+
+
+@media (max-width: 768px){
+	.club1 .pic{ width:auto; height:135px;}
+	.club1 .container{ padding:30px 35px 60px;}
+	.club1 .buttons a{ margin:10px 0px; width:100%;}
+
+
+
+
+	.app{height:auto; padding:60px 0;}
+	.app .container{ width:100%; margin-left: 0px;}	
+	.app .container .mytable{width: 100%;}
+	.app .container .mytable .cell p{ padding:20px 0 30px;}
+	.app .pic{ max-width:none; width:90%; position:static; right:0; bottom:80px; z-index:1;}
+
+
+	.barista .swiper-container{margin-top: 40px;}
+
+
+
+	.reserve .mytable .cell{ width:100%; display:block; padding:0 15px; box-sizing:border-box;}
+	.reserve .mytable .cell img{ width:80%;}
+	.reserve .mytable .cell p{ padding:0 15px; box-sizing:border-box;}
+	.reserve .mytable .cell .buttons a{ width:100%; margin:10px 0;}
+
+}
+.footer{
+	width: 100%;
+	background:#292929; 
+	color:#a3a3a3; 
+	padding:40px 0; 
+	line-height:1.6em; 
+	overflow: hidden;
+}
+.footer .container .text{
+	float: left;
+}
+.footer .container .logo a{
+	float: right;
+	width: 38px;
+	height: 38px;
+	margin-right: 15px;
+
+}
